@@ -24,8 +24,7 @@ public class Block : MonoBehaviour
             default:
                 throw new System.Exception("No EBlockType assigned");
         }
-        //resultantGO.localRotation = Quaternion.identity;
-        //resultantGO.rotation = type.Rotation;
+
         resultantGO.GetComponent<Block>()._type = type;
     }
 }

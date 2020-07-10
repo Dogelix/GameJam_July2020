@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -33,13 +34,14 @@ namespace Dogelix.LevelEditor
                 {
                     GameObject clone = Instantiate(GameAssets.i.TestCube.gameObject, nextPosition, Quaternion.identity) as GameObject;
                     clone.transform.parent = newEmptyGameObject.transform;
+                    clone.name = String.Format("Q{0}{1}", x, y);
                     // add x distance
                     nextPosition.x += _size.DistanceX;
                 }
                 // reset x position and add y distance
                 nextPosition.x = offsetLeft;
                 nextPosition.z += _size.DistanceY;
-                Debug.Log(nextPosition);
+                //Debug.Log(nextPosition);
             }
         }
     }

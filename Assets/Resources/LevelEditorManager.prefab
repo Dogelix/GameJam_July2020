@@ -61,12 +61,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc71ecc53ee0f5e4380d966869156627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _allTypes:
-  - {fileID: 11400000, guid: 17b4194471271934ca218d881220d446, type: 2}
-  - {fileID: 11400000, guid: 0652f1eb0009cbd4586b5ed1bc1cee12, type: 2}
-  - {fileID: 11400000, guid: a28f0d7d023bd7a44ae062f356940d3e, type: 2}
-  - {fileID: 11400000, guid: e1e5fa9fde2b64b44b89d54d8f583bec, type: 2}
-  - {fileID: 11400000, guid: ea777e3555fdeec4e8ef9830c85b5231, type: 2}
-  - {fileID: 11400000, guid: 503289fd74d38a645bcb0a14b9a369ff, type: 2}
-  - {fileID: 11400000, guid: cdc83e9b2d41c9549a9880eb571f496a, type: 2}
   _selectedType: {fileID: 0}
+  _maskNames:
+  - Block
+  - EditorPlane

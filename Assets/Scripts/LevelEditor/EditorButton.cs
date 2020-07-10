@@ -4,18 +4,22 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class EditorButton : MonoBehaviour
+namespace Dogelix.LevelEditor
 {
-    public BlockType _blockType;
-
-    private void Awake()
+    public class EditorButton : MonoBehaviour
     {
-        GetComponentInChildren<TextMeshProUGUI>().text = _blockType.Name;
+        public BlockType _blockType;
+
+        private void Awake()
+        {
+            GetComponentInChildren<TextMeshProUGUI>().text = _blockType.Name;
+        }
+
+        public void ActivateButton()
+        {
+            FindObjectOfType<EditorMouse>()._selectedType = _blockType;
+            GetComponent<Button>().Select();
+        }
     }
 
-    public void ActivateButton()
-    {
-        FindObjectOfType<EditorMouse>()._selectedType = _blockType;
-        GetComponent<Button>().Select();
-    }
 }
