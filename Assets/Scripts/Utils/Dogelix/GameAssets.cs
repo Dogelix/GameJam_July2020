@@ -39,10 +39,14 @@ namespace Dogelix
         public Transform EditorPlane;
         public RectTransform EditorButton;
 
+        public Transform Player;
+
         //Blocks
         public Transform Block;
         public Transform LBlock;
         public Transform RBlock;
+        public Transform Start;
+        public Transform Goal;
 
     }
 
