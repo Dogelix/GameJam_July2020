@@ -38,48 +38,52 @@ public class Timer : MonoBehaviour
         // Timer active to be true beginning of level
         timerActive = true;
 
-            // Hides game over image & text box
-            gameoverUI.SetActive(false);
-            // Makes player active
-            playerObject.SetActive(true);
+        // Hides game over image & text box
+        gameoverUI.SetActive(false);
+        // Makes player active
+        playerObject.SetActive(true);
     }
 
     void Update()
     {
-        // Checks if timer true, and timer is above 0
-        if (timerActive == true && time >= 0 && pauseCheck == false)
+        if(gameoverUI != null && playerObject != null )
         {
-            // time ticks down
-            time -= Time.deltaTime;
-
-            // Calculates time. Put hours here in case we need it. 
-            // hours = Mathf.Floor((time % 216000) / 3600).ToString("00");
-            minutes = Mathf.Floor((time % 3600) / 60).ToString("00");
-            seconds = (time % 60).ToString("00");
-            
-            textBox.text = minutes + ":" + seconds;
-        }
-
-        // If timer is not active (E.g. player dies), or time runs out AND game is not paused
-        else if ((timerActive == false || time < 0) && pauseCheck == false)
-        {
-            // Stops timer
-            timerActive = false;
-
-            // Swaps Image & text in, and player out to stop input
-            gameoverUI.SetActive(true);
-            playerObject.SetActive(false);
-        }
-
-        // If there is still time on the clock/player alive AND the game is paused
-        else if (timerActive == true && pauseCheck == true)
-        {
-            playerObject.SetActive(false);
-            // Whilst game is paused, if unpaused, set playerObject to be true
-            if (pauseCheck == false)
+            // Checks if timer true, and timer is above 0
+            if ( timerActive == true && time >= 0 && pauseCheck == false )
             {
-                playerObject.SetActive(true);
+                // time ticks down
+                time -= Time.deltaTime;
+
+                // Calculates time. Put hours here in case we need it. 
+                // hours = Mathf.Floor((time % 216000) / 3600).ToString("00");
+                minutes = Mathf.Floor(( time % 3600 ) / 60).ToString("00");
+                seconds = ( time % 60 ).ToString("00");
+
+                textBox.text = minutes + ":" + seconds;
+            }
+
+            // If timer is not active (E.g. player dies), or time runs out AND game is not paused
+            else if ( ( timerActive == false || time < 0 ) && pauseCheck == false )
+            {
+                // Stops timer
+                timerActive = false;
+
+                // Swaps Image & text in, and player out to stop input
+                gameoverUI.SetActive(true);
+                playerObject.SetActive(false);
+            }
+
+            // If there is still time on the clock/player alive AND the game is paused
+            else if ( timerActive == true && pauseCheck == true )
+            {
+                playerObject.SetActive(false);
+                // Whilst game is paused, if unpaused, set playerObject to be true
+                if ( pauseCheck == false )
+                {
+                    playerObject.SetActive(true);
+                }
             }
         }
+        
     }
 }

@@ -44,9 +44,14 @@ public class GameManager : MonoBehaviour
 
             var start  = GameObject.FindObjectsOfType<Block>().First(e => e._type.EBlockType == EBlockType.Start);
 
-            Instantiate(GameAssets.i.Player, start.transform.position, Quaternion.identity);
+            GetComponent<Timer>().playerObject = Instantiate(GameAssets.i.Player.gameObject, start.transform.position, Quaternion.identity);
         }
         
+    }
+
+    public void GoalReached()
+    {
+        GetComponent<Timer>().gameoverUI.SetActive(true);
     }
 
     private void LateUpdate()
