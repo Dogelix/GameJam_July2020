@@ -15,7 +15,7 @@ namespace Dogelix.LevelEditor
         {
             var name = transform.parent.GetComponentInChildren<TMP_InputField>().text;
 
-            string path = "Assets/Levels/" + name + ".lvl";
+            string path = "Assets/Levels/" + name + ".lvl.txt";
             GameObject[] blockObjects = FindObjectsOfType<Block>().Select(e => e.gameObject).ToArray();
 
             //foreach ( var item in blockObjects )
@@ -45,7 +45,8 @@ namespace Dogelix.LevelEditor
                         {
                             var blockData = blockObjects.First(e => e.transform.position == ( nextPosition + Vector3.up ));
                             var b = blockData.GetComponent<Block>();
-                            dataToWrite += "-" + b._type.EBlockType.ToString() + String.Format("-{0},{1},{2}", blockData.transform.rotation.eulerAngles.x, blockData.transform.rotation.eulerAngles.y, blockData.transform.rotation.eulerAngles.z);
+                            dataToWrite += ":" + b._type.EBlockType.ToString() + String.Format(":{0},{1},{2}", blockData.transform.position.x, blockData.transform.position.y, blockData.transform.position.z) +
+                                String.Format(":{0},{1},{2}", blockData.transform.rotation.eulerAngles.x, blockData.transform.rotation.eulerAngles.y, blockData.transform.rotation.eulerAngles.z);
                         }
 
                         sw.WriteLine(dataToWrite);

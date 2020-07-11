@@ -27,4 +27,23 @@ public class Block : MonoBehaviour
 
         resultantGO.GetComponent<Block>()._type = type;
     }
+
+    public static void Create( EBlockType type, Vector3 location, Vector3 eurlerAngles )
+    {
+        Transform resultantGO;
+        switch ( type )
+        {
+            case EBlockType.Rectangle:
+                resultantGO = Instantiate(GameAssets.i.RBlock, location, Quaternion.Euler(eurlerAngles));
+                break;
+            case EBlockType.LShape:
+                resultantGO = Instantiate(GameAssets.i.LBlock, location, Quaternion.Euler(eurlerAngles));
+                break;
+            case EBlockType.Cube:
+                resultantGO = Instantiate(GameAssets.i.Block, location, Quaternion.Euler(eurlerAngles));
+                break;
+            default:
+                throw new System.Exception("No EBlockType assigned");
+        }
+    }
 }

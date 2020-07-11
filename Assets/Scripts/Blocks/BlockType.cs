@@ -14,5 +14,7 @@ public enum EBlockType
 {
     Rectangle,
     LShape,
-    Cube
+    Cube,
+    Start,
+    Goal
 }
