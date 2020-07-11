@@ -49,6 +49,10 @@ public class Timer : MonoBehaviour
         // Checks if timer true, and timer is above 0
         if (timerActive == true && time >= 0 && pauseCheck == false)
         {
+            // Enables player after pause
+            if (playerObject.activeSelf == false) 
+                playerObject.SetActive(true);
+
             // time ticks down
             time -= Time.deltaTime;
 
@@ -64,7 +68,7 @@ public class Timer : MonoBehaviour
         else if ((timerActive == false || time < 0) && pauseCheck == false)
         {
             // Stops timer
-            timerActive = false;
+            timerActive = false;                                                                                // Stops Timer
 
             // Swaps Image & text in, and player out to stop input
             gameoverUI.SetActive(true);
