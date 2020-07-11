@@ -51,9 +51,12 @@ MonoBehaviour:
     type: 3}
   EditorButton: {fileID: 2480534380607514752, guid: 65a08fa570a98624c9d7523bb6290c85,
     type: 3}
+  Player: {fileID: 8123728778280794418, guid: 4fdf4f79893b3a0409b5a35c6046aadf, type: 3}
   Block: {fileID: 1921142668995918224, guid: 8b351e61e311121418fd01328221ae0d, type: 3}
   LBlock: {fileID: 1921142668995918224, guid: 039a1f2d7ca6e2a46b05d9a3ba45c151, type: 3}
   RBlock: {fileID: 1921142668995918224, guid: 774d81e67569ba3468932efc84afdfb5, type: 3}
+  Start: {fileID: 7898606884512891074, guid: 0147d2e5a77132d4c9248aee7a146923, type: 3}
+  Goal: {fileID: 817485414005832949, guid: d2b7f054751829f4fa36664047efba0f, type: 3}
 --- !u!114 &5352565015947319770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,3 +82,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3beeca78d67e754bb8b27ebe874b2f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _levelData: {fileID: 0}
