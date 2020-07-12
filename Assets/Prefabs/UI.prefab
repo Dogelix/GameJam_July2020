@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 9134086519772856205}
   - component: {fileID: 5827188791804924566}
   - component: {fileID: 9141070961351201050}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: GameOverCanvas
   m_TagString: LoseUI
   m_Icon: {fileID: 0}
@@ -498,7 +498,7 @@ GameObject:
   - component: {fileID: 914809819679662994}
   - component: {fileID: 5716345091865484299}
   - component: {fileID: 750745529926949624}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: WinCanvas
   m_TagString: WinUI
   m_Icon: {fileID: 0}
@@ -863,9 +863,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: LoadNextLevel
-        m_Mode: 5
+      - m_Target: {fileID: -2426210815055697847, guid: f83b1f7f752e1a94788b570de74d4f31,
+          type: 3}
+        m_MethodName: LoadNextNumericalLevel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1934,13 +1935,13 @@ GameObject:
   - component: {fileID: 5467384345951624356}
   - component: {fileID: 1884160573423711762}
   - component: {fileID: 5040708932761766263}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PauseCanvas
   m_TagString: PauseUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &822468071452856648
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2245,7 +2246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5929444158071344048}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2533,7 +2534,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7917575098119366229}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -2322045067573899490, guid: f83b1f7f752e1a94788b570de74d4f31,
+          type: 3}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7809671609268954420
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2168234005434969815}
   - component: {fileID: 6076098382515446352}
-  - component: {fileID: 5352565015947319770}
   - component: {fileID: 602411335283787373}
   - component: {fileID: 7001184250387875497}
   - component: {fileID: -2426210815055697847}
@@ -61,19 +60,6 @@ MonoBehaviour:
   RBlock: {fileID: 1921142668995918224, guid: 774d81e67569ba3468932efc84afdfb5, type: 3}
   Start: {fileID: 7898606884512891074, guid: 0147d2e5a77132d4c9248aee7a146923, type: 3}
   Goal: {fileID: 817485414005832949, guid: d2b7f054751829f4fa36664047efba0f, type: 3}
---- !u!114 &5352565015947319770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2168234005434969814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 514bc7dcad60fb94c9685a8f3c54d2a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _keybindings: {fileID: 11400000, guid: d52616df36739724aae48fe961debf52, type: 2}
 --- !u!114 &602411335283787373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,5 +129,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17cf5c0cf42ba6442a3e3ec0cf9b49b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textBox: {fileID: 0}
+  textBox2: {fileID: 0}
   winUI: {fileID: 0}

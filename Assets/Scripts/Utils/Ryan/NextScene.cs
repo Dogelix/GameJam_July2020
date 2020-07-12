@@ -25,6 +25,11 @@ public class NextScene : MonoBehaviour
         SceneManager.LoadScene(levelName);
     }
 
+    public void LoadNextNumericalLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
     /// <summary>
     /// Reloads scene by loading whatever scene name is in scene
     /// </summary>

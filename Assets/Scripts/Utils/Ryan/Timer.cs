@@ -31,7 +31,8 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
-        gameoverUI = GameObject.FindGameObjectWithTag("LoseUI");
+        if (gameoverUI == null)
+            gameoverUI = GameObject.FindGameObjectWithTag("LoseUI");
 
         timeUp = time;
         // Set to work with Clone if not set in editor
@@ -83,10 +84,11 @@ public class Timer : MonoBehaviour
         {
             playerObject.SetActive(false);
             // Whilst game is paused, if unpaused, set playerObject to be true
+            /*
             if (pauseCheck == false)
             {
                 playerObject.SetActive(true);
-            }
+            } */
         }
     }
 }
