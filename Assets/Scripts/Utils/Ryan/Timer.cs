@@ -7,6 +7,7 @@ public class Timer : MonoBehaviour
 {   
     // How long the timer is. Changeable in-editor. Set to -1 for no timer.
     public float time;
+    public float timeUp;        // Starting time of time
     // Text
     // private string hours; <- If needed in future
     private string minutes;
@@ -17,7 +18,7 @@ public class Timer : MonoBehaviour
     // Timer text (Displays the timer on a text box)
     public Text textBox;
     // Checks if the timer is active or not. Can set to false when 0.
-    bool timerActive;
+    public bool timerActive;
 
     // If game is paused, changes how game interacts with timer
     public bool pauseCheck;
@@ -30,7 +31,7 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
-
+        timeUp = time;
         // Set to work with Clone if not set in editor
         if (playerObject == null)
             playerObject = GameObject.FindGameObjectWithTag("Player");
