@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System.IO;
-//using UnityEditor;
+using UnityEditor;
 
 namespace Dogelix.LevelEditor
 {
@@ -39,7 +39,7 @@ namespace Dogelix.LevelEditor
                 }
             }
 
-            //AssetDatabase.ImportAsset(path);
+            AssetDatabase.ImportAsset(path);
         }
     }
 }
