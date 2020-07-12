@@ -1,6 +1,7 @@
 ﻿using Dogelix.Utils;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -11,19 +12,28 @@ public class Movement : MonoBehaviour
 
     Vector3 _moveDir;
     CharacterController _characterController;
-    Animator _animator;
+    public Animator _animator;
+    AnimatorController _animatorController;
+    BlendTree _blendTree;
     public GameObject _characterModel;
 
     private void Awake()
     {
         _characterController = GetComponent<CharacterController>();
-        _animator = GetComponentInChildren<Animator>();
+        //_animator = GetComponentInChildren<Animator>();
+        _animatorController = GetComponent<AnimatorController>();
     }
 
     private void Update()
     {
         Move();
         RotateModel();
+
+        //if (_characterController.velocity.sqrMagnitude == 0  )
+        //{
+        //    _animator.SetFloat("move_x", 0);
+        //    _animator.SetFloat("move_y", 0);
+        //}
     }
 
     private void RotateModel()
@@ -31,18 +41,26 @@ public class Movement : MonoBehaviour
         if( InputManager._i.GetKey(KeybindingActions.MoveForward) > 0 )
         {
             _characterModel.transform.rotation = Quaternion.Euler(0, 0, 0);
+            _animator.SetBool("Moving", true);
         }
         else if( InputManager._i.GetKey(KeybindingActions.MoveForward) < 0 )
         {
             _characterModel.transform.rotation = Quaternion.Euler(0, -180, 0);
+            _animator.SetBool("Moving", true);
         }
         else if ( InputManager._i.GetKey(KeybindingActions.MoveRight) > 0 )
         {
             _characterModel.transform.rotation = Quaternion.Euler(0, 90, 0);
+            _animator.SetBool("Moving", true);
         }
         else if ( InputManager._i.GetKey(KeybindingActions.MoveRight) < 0 )
         {
             _characterModel.transform.rotation = Quaternion.Euler(0, -90, 0);
+            _animator.SetBool("Moving", true);
+        }
+        else
+        {
+            _animator.SetBool("Moving", false);
         }
     }
 
@@ -81,7 +99,10 @@ public class Movement : MonoBehaviour
         var body = hit.collider.attachedRigidbody;
         Vector3 force;
 
-        if ( body == null || body.isKinematic ) return;
+        if ( body == null || body.isKinematic )
+        {
+            return;
+        }
 
         //vector3s.Add(StaticFunctions.GetLocationOfHit(body.gameObject, hit.normal));
 
@@ -90,6 +111,7 @@ public class Movement : MonoBehaviour
         //body.
 
         body.AddForceAtPosition(force, hit.point);
+        _animator.SetTrigger("Pushing");
     }
 }
 

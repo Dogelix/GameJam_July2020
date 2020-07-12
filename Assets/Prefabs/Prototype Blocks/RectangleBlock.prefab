@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1921142668995918224}
   - component: {fileID: 1921142668995918231}
   - component: {fileID: 8427609117965037621}
+  - component: {fileID: 3736719051711175056}
   m_Layer: 8
   m_Name: RectangleBlock
   m_TagString: Block
@@ -63,19 +64,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!65 &4162099925322255232
+--- !u!65 &3736719051711175056
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6416666823643513391}
+  m_GameObject: {fileID: 1921142668995918230}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.99967, y: 0.999994, z: 2.999706}
-  m_Center: {x: 0.00016500056, y: 0.0000070631504, z: 0.00011098385}
+  m_Size: {x: 0.9, y: 1, z: 1.9}
+  m_Center: {x: 0, y: 0, z: 0.5}
 --- !u!1001 &3039218831651314470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -150,12 +151,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dd81c050450a0b4a8359744adb786eb, type: 3}
---- !u!1 &6416666823643513391 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 1dd81c050450a0b4a8359744adb786eb,
-    type: 3}
-  m_PrefabInstance: {fileID: 3039218831651314470}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8023107358040830012 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 1dd81c050450a0b4a8359744adb786eb,

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1921142668995918224}
   - component: {fileID: 1921142668995918231}
   - component: {fileID: 9108873579301110245}
+  - component: {fileID: 7704318035598595220}
   m_Layer: 8
   m_Name: StandardBlock
   m_TagString: Block
@@ -63,19 +64,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!65 &643981239783017373
+--- !u!65 &7704318035598595220
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7425204714947765588}
+  m_GameObject: {fileID: 1921142668995918230}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.8640184, y: 1.7430158, z: 1.863999}
-  m_Center: {x: -0.0048465137, y: 0.028619943, z: -0.013785361}
+  m_Size: {x: 0.9, y: 0.9, z: 0.9}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1453058833173396573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -141,17 +142,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 45fe74992bccd2a4b80138bc7addd534,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.45945206
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 45fe74992bccd2a4b80138bc7addd534,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.53049
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 45fe74992bccd2a4b80138bc7addd534,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.53049
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 45fe74992bccd2a4b80138bc7addd534,
         type: 3}
@@ -160,12 +161,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45fe74992bccd2a4b80138bc7addd534, type: 3}
---- !u!1 &7425204714947765588 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 45fe74992bccd2a4b80138bc7addd534,
-    type: 3}
-  m_PrefabInstance: {fileID: 1453058833173396573}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5859457451489924935 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 45fe74992bccd2a4b80138bc7addd534,
