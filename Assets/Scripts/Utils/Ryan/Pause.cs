@@ -14,9 +14,9 @@ public class Pause : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        pauseUI = GameObject.FindGameObjectWithTag("PauseUI");
         paused = false;
         pausedGame = GetComponent<Timer>();
-        pauseUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -41,7 +41,7 @@ public class Pause : MonoBehaviour
     {
         paused = true;
         pausedGame.pauseCheck = true;
-        pauseUI.SetActive(true);
+        pauseUI.GetComponent<Canvas>().enabled = true;
     }
 
     /// <summary>
@@ -50,7 +50,7 @@ public class Pause : MonoBehaviour
     private void Play()
     {
         paused = false;
-        pauseUI.SetActive(false);
+        pauseUI.GetComponent<Canvas>().enabled = false;
         pausedGame.pauseCheck = false;
     }
 }

@@ -75,7 +75,7 @@ public class Block : MonoBehaviour
 
     private void Start()
     {
-        if ( !_canMove )
+        if ( !_canMove && (_type.EBlockType != EBlockType.Start || _type.EBlockType != EBlockType.Goal) )
         {
             GetComponent<Rigidbody>().isKinematic = true;
         }
