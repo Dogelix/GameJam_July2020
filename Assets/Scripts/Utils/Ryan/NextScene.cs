@@ -39,7 +39,7 @@ public class NextScene : MonoBehaviour
     /// </summary>
     public void MainMenu()
     {
-        SceneManager.LoadScene("0MainMenu");
+        SceneManager.LoadScene("0_MainMenu");
     }
 
     /// <summary>
