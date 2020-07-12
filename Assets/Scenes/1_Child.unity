@@ -128,6 +128,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 869446889956292076, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 869446889956292076, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 869446889956292076, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 869446889956292076, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: -2426210815055697847, guid: f83b1f7f752e1a94788b570de74d4f31,
+        type: 3}
+    - target: {fileID: 869446889956292076, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 869446889956292076, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5121557766894917973, guid: c305d65d4dc8771499f2d7f982705b57,
         type: 3}
       propertyPath: m_LocalPosition.x
