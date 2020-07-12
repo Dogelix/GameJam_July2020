@@ -42,14 +42,14 @@ public class NextScene : MonoBehaviour
         SceneManager.LoadScene("0_MainMenu");
     }
 
-    /// <summary>
-    /// Exits Application
-    /// </summary>
-    public void QuitGame ()
-    {
-        Debug.Log ("QUIT!");
-        Application.Quit();
-    }
+/// <summary>
+/// Exits Application
+/// </summary>
+public void QuitGame ()
+{
+Debug.Log ("QUIT!");
+Application.Quit();
+}
 
 }
 
