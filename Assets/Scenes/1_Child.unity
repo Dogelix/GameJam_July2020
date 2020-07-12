@@ -159,6 +159,68 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3650400878099318281, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: e072f4498613fee439e0003e13ccb2a7,
+        type: 3}
+    - target: {fileID: 3650400878099318281, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_Text
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 3650400878099318281, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 3650400878099318281, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3650400878099318281, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 3782700140047738571, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319536004122014216, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_Text
+      value: Game Paused
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319536004122014216, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: e072f4498613fee439e0003e13ccb2a7,
+        type: 3}
+    - target: {fileID: 4319536004122014216, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319536004122014216, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319536004122014216, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121557765439403361, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5121557766894917973, guid: c305d65d4dc8771499f2d7f982705b57,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -219,6 +281,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 6725494974783509547, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1268
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725494974783509547, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1109
+      objectReference: {fileID: 0}
+    - target: {fileID: 8609462049565242070, guid: c305d65d4dc8771499f2d7f982705b57,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f10f4dae386ed29498dd46383f111a78,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c305d65d4dc8771499f2d7f982705b57, type: 3}
 --- !u!1 &656268861 stripped
