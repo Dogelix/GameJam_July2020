@@ -51,4 +51,15 @@ public class NextScene : MonoBehaviour
     {
         SceneManager.LoadScene("0MainMenu");
     }
+
+/// <summary>
+/// Exits Application
+/// </summary>
+public void QuitGame ()
+{
+Debug.Log ("QUIT!");
+Application.Quit();
 }
+
+}
+
