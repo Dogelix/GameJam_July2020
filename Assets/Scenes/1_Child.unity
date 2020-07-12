@@ -483,6 +483,11 @@ PrefabInstance:
       propertyPath: pauseCheck
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7001184250387875497, guid: f83b1f7f752e1a94788b570de74d4f31,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8416854759968802704, guid: f83b1f7f752e1a94788b570de74d4f31,
         type: 3}
       propertyPath: textBox
