@@ -16,7 +16,7 @@ public class InputManager : MonoBehaviour
         else
             Destroy(this);
 
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
     }
 
     /// <summary>
