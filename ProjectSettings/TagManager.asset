@@ -6,8 +6,6 @@ TagManager:
   tags:
   - GameManager
   - GameOverCanvas
-  - Block
-  - Spawn
   layers:
   - Default
   - TransparentFX

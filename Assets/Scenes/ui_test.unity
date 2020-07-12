@@ -301,7 +301,7 @@ RectTransform:
   - {fileID: 1755203805}
   - {fileID: 1696265102}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -786,8 +786,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/0_MainMenu.unity
 <<<<<<< HEAD
   m_RootOrder: 4
+=======
+  m_RootOrder: 3
+>>>>>>> parent of e9cbdd0... Menu Changes:Assets/Scenes/ui_test.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1025164494
 =======
@@ -914,7 +918,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1549178584
 =======
@@ -1096,17 +1100,18 @@ GameObject:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1563073576}
+      - m_Target: {fileID: -2426210815055697847, guid: f83b1f7f752e1a94788b570de74d4f31,
+          type: 3}
         m_MethodName: LoadNextLevel
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 1_Child
+          m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
 --- !u!114 &1549178587
 =======
   serializedVersion: 6
@@ -1196,6 +1201,7 @@ CanvasRenderer:
 <<<<<<< HEAD
   m_GameObject: {fileID: 1549178584}
   m_CullTransparentMesh: 0
+<<<<<<< HEAD:Assets/Scenes/0_MainMenu.unity
 --- !u!1001 &1563073575
 =======
   m_GameObject: {fileID: 766468786}
@@ -1300,6 +1306,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e9a88f7f1ef8be4d9bd4471cd9aafa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> parent of e9cbdd0... Menu Changes:Assets/Scenes/ui_test.unity
 --- !u!1 &1696265101
 =======
     - target: {fileID: 7001184250387875497, guid: f83b1f7f752e1a94788b570de74d4f31,
@@ -1626,8 +1634,12 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD:Assets/Scenes/0_MainMenu.unity
 <<<<<<< HEAD
   m_IsActive: 0
+=======
+  m_IsActive: 1
+>>>>>>> parent of e9cbdd0... Menu Changes:Assets/Scenes/ui_test.unity
 --- !u!224 &1755203805
 =======
   m_IsActive: 1
@@ -2019,7 +2031,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2072844209
 =======
