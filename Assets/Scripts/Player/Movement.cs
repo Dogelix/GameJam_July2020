@@ -48,6 +48,8 @@ public class Movement : MonoBehaviour
 
         force = hit.controller.velocity * _pushPower;
 
+        //body.
+
         body.AddForceAtPosition(force, hit.point);
     }
 }

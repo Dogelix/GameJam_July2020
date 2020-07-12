@@ -8,8 +8,7 @@ public class GoalDetection : MonoBehaviour
     {
         if(collision.tag == "Player" )
         {
-            GameObject.FindGameObjectWithTag("GameOverCanvas").GetComponent<Canvas>().enabled = true;
-            Debug.Log("Win");
+            FindObjectOfType<GameManager>().GoalReached();
         }
     }
 }
