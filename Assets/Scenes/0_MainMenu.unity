@@ -457,6 +457,12 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2322045067573899490, guid: f83b1f7f752e1a94788b570de74d4f31,
+        type: 3}
+      propertyPath: pauseUI
+      value: 
+      objectReference: {fileID: 5929444158071344051, guid: 06cf7be847ac9464cb4f1411a2b783b7,
+        type: 3}
     - target: {fileID: 602411335283787373, guid: f83b1f7f752e1a94788b570de74d4f31,
         type: 3}
       propertyPath: m_Enabled
