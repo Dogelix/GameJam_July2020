@@ -8,6 +8,7 @@ public class BlockType : ScriptableObject
     public string Name;
     public EBlockType EBlockType;
     public Quaternion Rotation;
+    public bool CanMove = true;
 }
 
 public enum EBlockType

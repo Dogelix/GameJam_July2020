@@ -35,14 +35,15 @@ public class GameManager : MonoBehaviour
                     }
                     else
                     {
-                        var t = Block.Create(blockType, location, rot);
+                        var t = Block.Create(blockType, new Vector3(location.x, 0.5f, location.z), rot);
                         t.GetComponent<Rigidbody>().useGravity = true;
+                        t.GetComponent<Block>()._canMove = bool.Parse(split[4]);
                     }
 
                 }
             }
 
-            var start  = GameObject.FindObjectsOfType<Block>().First(e => e._type.EBlockType == EBlockType.Start);
+            var start = GameObject.FindGameObjectWithTag("Spawn");
 
             GetComponent<Timer>().playerObject = Instantiate(GameAssets.i.Player.gameObject, start.transform.position, Quaternion.identity);
         }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3893367125768246309}
   m_Layer: 0
   m_Name: StartGO
-  m_TagString: Untagged
+  m_TagString: Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _type: {fileID: 11400000, guid: 55c5dbd7785c9d242aeef0c0d271d9c9, type: 2}
+  _canMove: 0
 --- !u!1 &6443075842390303272
 GameObject:
   m_ObjectHideFlags: 0

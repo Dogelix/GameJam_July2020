@@ -34,7 +34,7 @@ namespace Dogelix.LevelEditor
                     var pos = block.transform.position;
                     
                     dataToWrite += ":" + b._type.EBlockType.ToString() + String.Format(":{0},{1},{2}", Mathf.RoundToInt(pos.x), Mathf.RoundToInt(pos.y), Mathf.RoundToInt(pos.z)) +
-                        String.Format(":{0},{1},{2}", block.transform.rotation.eulerAngles.x, block.transform.rotation.eulerAngles.y, block.transform.rotation.eulerAngles.z);
+                        String.Format(":{0},{1},{2}", block.transform.rotation.eulerAngles.x, block.transform.rotation.eulerAngles.y, block.transform.rotation.eulerAngles.z) + String.Format(":{0}", b._canMove.ToString());
                     sw.WriteLine(dataToWrite);
                 }
             }

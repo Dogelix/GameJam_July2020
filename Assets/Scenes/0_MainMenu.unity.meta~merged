@@ -1,10 +1,11 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
 guid: 5b4969a6e4598ff4782b7bd80eda67ae
-=======
-guid: 2fc1facf3a48ab343b7878a9be9fb2e2
->>>>>>> 962b75254c367876cc367a6f04a02e7a4a8a670e
 DefaultImporter:
+=======
+guid: 06cf7be847ac9464cb4f1411a2b783b7
+PrefabImporter:
+>>>>>>> 962b75254c367876cc367a6f04a02e7a4a8a670e
   externalObjects: {}
   userData: 
   assetBundleName: 
