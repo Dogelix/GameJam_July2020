@@ -6,6 +6,12 @@ TagManager:
   tags:
   - GameManager
   - GameOverCanvas
+  - Block
+  - Spawn
+  - Music
+  - WinUI
+  - PauseUI
+  - LoseUI
   layers:
   - Default
   - TransparentFX

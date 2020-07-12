@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using System.Linq;
 
 public class Win : MonoBehaviour
 {
@@ -16,7 +18,7 @@ public class Win : MonoBehaviour
     private string seconds;
 
     // Text Timer
-    public Text textBox;
+    public GameObject textBox;
 
     // The UI display for winning the level
     public GameObject winUI;
@@ -26,6 +28,8 @@ public class Win : MonoBehaviour
     {
         // timer gets components of Timer
         timer = GetComponent<Timer>();
+
+        winUI = GameObject.FindGameObjectWithTag("WinUI");
     }
 
     // Update is called once per frame - Left just in case needed
@@ -38,7 +42,7 @@ public class Win : MonoBehaviour
     public void WinLevel()
     {
         
-        winUI.SetActive(true);              // Sets winUI in UI to active 
+        winUI.GetComponent<Canvas>().enabled = true;              // Sets winUI in UI to active 
         timer.timerActive = false;          // Sets timerActive in Timer to false
 
         // Checks original time limit vs how much has been
@@ -49,6 +53,6 @@ public class Win : MonoBehaviour
         seconds = (winTime % 60).ToString("00");
 
         // Displays in a text box specified in editor
-        textBox.text = minutes + ":" + seconds;
+        GameObject.Find("winText").GetComponent<TextMeshPro>().text = minutes + ":" + seconds;
     }
 }
