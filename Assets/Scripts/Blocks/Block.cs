@@ -68,4 +68,9 @@ public class Block : MonoBehaviour
             GetComponentInChildren<BoxCollider>().enabled = true;
         }
     }
+
+    private void Update()
+    {
+        
+    }
 }

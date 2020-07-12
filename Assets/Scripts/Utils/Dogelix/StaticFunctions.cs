@@ -84,6 +84,31 @@ namespace Dogelix.Utils
             return angle;
         }
 
+        /// <summary>
+        /// This takes in the ray cast to see where the click is coming from, then calculate on which face
+        /// to add 1 unit to that direction to give a location to instantiate a new block.
+        /// </summary>
+        /// <param name="_rayHit">The raycast hit used to find the block to begin with</param>
+        /// <returns>This returns a Vector3 of the location to instantiate a new ship block</returns>
+        public static Vector3 GetLocationOfHit(this GameObject gameObject, Vector3  normal )
+        {
+            Vector3 _incomingVec = normal - Vector3.up;
+
+            if ( _incomingVec == new Vector3(0, -1, -1) )
+                return gameObject.transform.position + Vector3.back;
+            if ( _incomingVec == new Vector3(0, -1, 1) )
+                return gameObject.transform.position + Vector3.forward;
+            if ( _incomingVec == new Vector3(0, 0, 0) )
+                return gameObject.transform.position + Vector3.up;
+            if ( _incomingVec == new Vector3(1, 1, 1) )
+                return gameObject.transform.position + Vector3.down;
+            if ( _incomingVec == new Vector3(-1, -1, 0) )
+                return gameObject.transform.position + Vector3.left;
+            if ( _incomingVec == new Vector3(1, -1, 0) )
+                return gameObject.transform.position + Vector3.right;
+
+            return new Vector3(0, 0, 0);
+        }
     }
 
 }

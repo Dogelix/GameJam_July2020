@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 0.02
-  _pushPower: 2
+  _pushPower: 10
   _weight: 6
 --- !u!143 &8123728778280794419
 CharacterController:

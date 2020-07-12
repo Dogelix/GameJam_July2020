@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Dogelix.Utils;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -39,12 +40,26 @@ public class Movement : MonoBehaviour
         _characterController.Move(_moveDir);
     }
 
+    List<Vector3> vector3s = new List<Vector3>();
+
+    private void OnDrawGizmos()
+    {
+        foreach ( var item in vector3s )
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawLine(item, item + Vector3.up);
+        }
+    }
+
+    //Pushing blocks
     private void OnControllerColliderHit( ControllerColliderHit hit )
     {
         var body = hit.collider.attachedRigidbody;
         Vector3 force;
 
         if ( body == null || body.isKinematic ) return;
+
+        //vector3s.Add(StaticFunctions.GetLocationOfHit(body.gameObject, hit.normal));
 
         force = hit.controller.velocity * _pushPower;
 
