@@ -31,6 +31,8 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
+        gameoverUI = GameObject.FindGameObjectWithTag("LoseUI");
+
         timeUp = time;
         // Set to work with Clone if not set in editor
         if (playerObject == null)
@@ -43,11 +45,6 @@ public class Timer : MonoBehaviour
         timeGame += timeGame + 0.00f;
         // Timer active to be true beginning of level
         timerActive = true;
-
-            // Hides game over image & text box
-            gameoverUI.SetActive(false);
-            // Makes player active
-            playerObject.SetActive(true);
     }
 
     void Update()
@@ -77,7 +74,7 @@ public class Timer : MonoBehaviour
             timerActive = false;                                                                                // Stops Timer
 
             // Swaps Image & text in, and player out to stop input
-            gameoverUI.SetActive(true);
+            gameoverUI.GetComponent<Canvas>().enabled = true;
             playerObject.SetActive(false);
         }
 
