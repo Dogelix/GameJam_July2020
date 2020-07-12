@@ -6,6 +6,7 @@ using UnityEngine;
 public class Block : MonoBehaviour
 {
     public BlockType _type;
+    public bool _canMove;
 
     public static void Create(BlockType type, Vector3 location )
     {
@@ -63,10 +64,22 @@ public class Block : MonoBehaviour
 
     private void Awake()
     {
-        if(_type.EBlockType == EBlockType.Goal )
+        if(_type != null )
         {
-            GetComponentInChildren<BoxCollider>().enabled = true;
+            if ( _type.EBlockType == EBlockType.Goal )
+            {
+                GetComponentInChildren<BoxCollider>().enabled = true;
+            }
+        }        
+    }
+
+    private void Start()
+    {
+        if ( !_canMove )
+        {
+            GetComponent<Rigidbody>().isKinematic = true;
         }
+
     }
 
     private void Update()

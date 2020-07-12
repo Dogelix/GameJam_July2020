@@ -11,6 +11,7 @@ namespace Dogelix.LevelEditor
     public class EditorMouse : MonoBehaviour
     {
         public BlockType _selectedType;
+        public bool _immovableSelected = false;
         public string[] _maskNames;
 
         private void Awake()
@@ -33,24 +34,52 @@ namespace Dogelix.LevelEditor
                 RaycastHit hit;
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-                int combinedMask = LayerMask.GetMask(_maskNames);
-
-                if ( Physics.Raycast(ray, out hit, Mathf.Infinity, combinedMask) )
+                if ( _immovableSelected )
                 {
-                    Debug.Log(hit.collider.name);
+                    int combinedMask = LayerMask.GetMask(_maskNames[0]);
 
-                    if(hit.collider.GetComponent<Block>() != null )
+                    if ( Physics.Raycast(ray, out hit) )
                     {
-                        return;
+                        Debug.Log(hit.collider.name);
+
+                        if ( hit.collider.GetComponent<Block>() == null )
+                        {
+                            return;
+                        }
+                        else
+                        {
+                            hit.collider.GetComponent<Block>()._canMove = false;
+                            Debug.Log("Set immovable");
+                        }
+
+                        _selectedType = null;
+                        _immovableSelected = false;
+
+                        EventSystem.current.GetComponent<EventSystem>().SetSelectedGameObject(null);
                     }
-
-                    var postition = hit.collider.transform.position + Vector3.up;
-
-                    Block.Create(_selectedType, postition);
-                    _selectedType = null;
-
-                    EventSystem.current.GetComponent<EventSystem>().SetSelectedGameObject(null);
                 }
+                else
+                {
+                    int combinedMask = LayerMask.GetMask(_maskNames);
+
+                    if ( Physics.Raycast(ray, out hit, Mathf.Infinity, combinedMask) )
+                    {
+                        Debug.Log(hit.collider.name);
+
+                        if ( hit.collider.GetComponent<Block>() != null )
+                        {
+                            return;
+                        }
+
+                        var postition = hit.collider.transform.position + Vector3.up;
+
+                        Block.Create(_selectedType, postition);
+                        _selectedType = null;
+
+                        EventSystem.current.GetComponent<EventSystem>().SetSelectedGameObject(null);
+                    }
+                }
+               
             }
         }
     }

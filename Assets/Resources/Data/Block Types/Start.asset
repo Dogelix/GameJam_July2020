@@ -15,3 +15,4 @@ MonoBehaviour:
   Name: Start
   EBlockType: 3
   Rotation: {x: 0, y: 0, z: 0, w: 0}
+  CanMove: 0

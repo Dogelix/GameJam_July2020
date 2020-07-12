@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 5822366510099752978}
   m_Layer: 0
   m_Name: EndGO
-  m_TagString: Untagged
+  m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,3 +151,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _type: {fileID: 11400000, guid: 1c4089cdc9e50dd4aa0b4d060a693389, type: 2}
+  _canMove: 0

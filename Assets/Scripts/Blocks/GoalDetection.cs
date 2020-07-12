@@ -19,12 +19,12 @@ public class GoalDetection : MonoBehaviour
     {
         if(collision.tag == "Player" )
         {
-            GameObject.FindGameObjectWithTag("GameOverCanvas").GetComponent<Canvas>().enabled = true;
-            Debug.Log("Win");
+            //GameObject.FindGameObjectWithTag("GameOverCanvas").GetComponent<Canvas>().enabled = true;
+            //Debug.Log("Win");
 
             // Loads next scene in numerical order
             //nextScene.LoadNextLevel();
-            win.WinLevel();
+            win.WinLevel(); 
         }
     }
 }

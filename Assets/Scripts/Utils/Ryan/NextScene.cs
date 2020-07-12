@@ -13,26 +13,16 @@ public class NextScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        nextLevel = false;
         // Gets current scene name, sets as scene
         scene = SceneManager.GetActiveScene();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (nextLevel == true)
-        {
-            LoadNextLevel();
-        }
     }
 
     /// <summary>
     /// Loads next numerical scene
     /// </summary>
-    public void LoadNextLevel()
+    public void LoadNextLevel(string levelName)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(levelName);
     }
 
     /// <summary>

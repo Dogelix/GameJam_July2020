@@ -15,3 +15,4 @@ MonoBehaviour:
   Name: Goal
   EBlockType: 4
   Rotation: {x: 0, y: 0, z: 0, w: 0}
+  CanMove: 0
