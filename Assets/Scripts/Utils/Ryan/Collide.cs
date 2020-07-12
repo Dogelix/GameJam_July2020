@@ -16,7 +16,7 @@ public class Collide : MonoBehaviour
         if (collision.collider.CompareTag("Player"))
         {
             Debug.Log("CollisionSuccessful");
-            nextScene.LoadNextLevel();
+            //nextScene.LoadNextLevel();
         }
             
     }
