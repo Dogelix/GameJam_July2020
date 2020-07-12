@@ -305,6 +305,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 914809819679662994, guid: 06cf7be847ac9464cb4f1411a2b783b7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4052783413736342816, guid: 06cf7be847ac9464cb4f1411a2b783b7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -382,18 +387,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06cf7be847ac9464cb4f1411a2b783b7, type: 3}
---- !u!114 &1863273374 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3608080674561249101, guid: 06cf7be847ac9464cb4f1411a2b783b7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1863273373}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2084708119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -490,7 +483,7 @@ PrefabInstance:
         type: 3}
       propertyPath: textBox
       value: 
-      objectReference: {fileID: 1863273374}
+      objectReference: {fileID: 0}
     - target: {fileID: 7001184250387875497, guid: f83b1f7f752e1a94788b570de74d4f31,
         type: 3}
       propertyPath: time

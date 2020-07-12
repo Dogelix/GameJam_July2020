@@ -1,7 +1,6 @@
 ﻿using Dogelix.Utils;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -13,15 +12,12 @@ public class Movement : MonoBehaviour
     Vector3 _moveDir;
     CharacterController _characterController;
     public Animator _animator;
-    AnimatorController _animatorController;
-    BlendTree _blendTree;
     public GameObject _characterModel;
 
     private void Awake()
     {
         _characterController = GetComponent<CharacterController>();
         //_animator = GetComponentInChildren<Animator>();
-        _animatorController = GetComponent<AnimatorController>();
     }
 
     private void Update()
