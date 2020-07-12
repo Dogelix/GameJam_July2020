@@ -11,15 +11,39 @@ public class Movement : MonoBehaviour
 
     Vector3 _moveDir;
     CharacterController _characterController;
+    Animator _animator;
+    public GameObject _characterModel;
 
     private void Awake()
     {
         _characterController = GetComponent<CharacterController>();
+        _animator = GetComponentInChildren<Animator>();
     }
 
     private void Update()
     {
         Move();
+        RotateModel();
+    }
+
+    private void RotateModel()
+    {
+        if( InputManager._i.GetKey(KeybindingActions.MoveForward) > 0 )
+        {
+            _characterModel.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        else if( InputManager._i.GetKey(KeybindingActions.MoveForward) < 0 )
+        {
+            _characterModel.transform.rotation = Quaternion.Euler(0, -180, 0);
+        }
+        else if ( InputManager._i.GetKey(KeybindingActions.MoveRight) > 0 )
+        {
+            _characterModel.transform.rotation = Quaternion.Euler(0, 90, 0);
+        }
+        else if ( InputManager._i.GetKey(KeybindingActions.MoveRight) < 0 )
+        {
+            _characterModel.transform.rotation = Quaternion.Euler(0, -90, 0);
+        }
     }
 
     private void Move()
