@@ -22,16 +22,15 @@ public class Pause : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Checks input manager input. If input for pause is pressed, do this
         if (InputManager._i.GetKeyDown(KeybindingActions.Pause) > 0)
         {
+            // Checks if paused or not. Can be improved to just a toggle
             if (paused == false)
-            {
                 Paused();
-            }
+
             else if (paused == true)
-            {
                 Play();
-            }
         }
     }
 
