@@ -30,6 +30,11 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
+
+        // Set to work with Clone if not set in editor
+        if (playerObject == null)
+            playerObject = GameObject.FindGameObjectWithTag("Player");
+
         // Sets game to be playing when load up
         pauseCheck = false;
 
